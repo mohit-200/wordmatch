@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(110deg, #f103b549 60%, #bd4bff, 60%);
+}
+
+body {
+    transition: 1s all;
+    background-color: rgba(33, 15, 75, 0.274);
+}
+
+.background {
+    background: linear-gradient(110deg, #f103b549 60%, #bd4bff, 60%);
+    background-image: url(pic.jpg);
+    background-size: cover;
+}
+
+div.wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+div#wrapper h1 {
+    color: rgb(255, 0, 140);
+    text-align: center;
+    font-family: cursive;
+}
+
+div.lang {
+    display: flex;
+    background: cadetblue;
+    height: 30vh;
+    justify-content: center;
+    font: sans-serif;
+}
+
+div.lang div.word-box {
+    flex-grow: 1;
+    margin: 5px;
+    background: rgb(5, 255, 255);
+    position: relative;
+    /*align-self: center*/
+    cursor: pointer
+}
+
+.word {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 2em;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#fr {
+    margin-top: 80px;
+}
+
+#fr div.word-box {
+    background-color: lightpink;
+}
+
+.enter {
+    border: 1px dashed black;
+}
+
+.hovered {
+    background: #f103a285;
+}
+
+.invisible {
+    display: none;
+}
+
+#btn {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#btn input {
+    padding: 2% 5%;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    width: 20%;
+    height: 10vh;
+    /* transform: translate(-50%, -50%); */
+    font-size: 1.5em;
+    background-color: rgba(104, 125, 184, 0.897);
+    color: #d61a0d;
+    transition: 1s ease-in;
+    border: none;
+    outline: none;
+}
+
+#btn input:hover {
+    box-shadow: 5px 5px 10px 20px #bdc3c7;
+    color: white
+}
+
+.right {
+    background-color: #77d65a;
+}
+
+#boxWin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 20vh;
+    background: burlywood;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px 15px #eee;
+    text-align: center;
+    padding: 5px;
+    display: none;
+}
+
+#boxWin input {
+    padding: 15px 35px;
+    background: #78e08f;
+    font-size: 2em
+}
